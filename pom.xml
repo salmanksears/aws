@@ -7,6 +7,9 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<sonar.projectKey>salmanksears_aws</sonar.projectKey>
+  		<sonar.organization>salmanksears</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
   <dependencies>
   	<dependency>
@@ -17,9 +20,29 @@
   	</dependency>
 	<dependency>
   		<groupId>com.amazonaws</groupId>
+  		<artifactId>aws-lambda-java-events</artifactId>
+  		<version>3.7.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.amazonaws</groupId>
   		<artifactId>aws-java-sdk-s3</artifactId> 
 		<version>1.11.624</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.apache.commons</groupId>
+  		<artifactId>commons-lang3</artifactId>
+  		<version>3.8</version>
+  	</dependency>
+	<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-core</artifactId>
+    		<version>2.12.2</version>
+	</dependency>
+	<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-databind</artifactId>
+    		<version>2.12.2</version>
+	</dependency>
   </dependencies>
   <build>
   	<plugins>
